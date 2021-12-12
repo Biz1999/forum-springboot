@@ -6,3 +6,4 @@ create table curso (
 );
 
 INSERT INTO Curso (id, nome, categoria) VALUES (1, 'Kotlin', 'PROGRAMAÇÃO');
+INSERT INTO Curso (id, nome, categoria) VALUES (2, 'Html', 'Frontend');

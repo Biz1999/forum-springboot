@@ -2,6 +2,7 @@ package br.com.alura.forum.controllers
 
 import br.com.alura.forum.dto.AtualizaoTopicoForm
 import br.com.alura.forum.dto.NovoTopicoForm
+import br.com.alura.forum.dto.TopicoPorCategoriaDto
 import br.com.alura.forum.dto.TopicoView
 import br.com.alura.forum.models.Topico
 import br.com.alura.forum.services.TopicoService
@@ -59,4 +60,16 @@ class TopicoController(private val service: TopicoService) {
     fun deletar(@PathVariable id: Long) {
         service.deletar(id)
     }
+
+    @GetMapping("/relatorio")
+    fun relatorio(): List<TopicoPorCategoriaDto>  {
+        return service.relatorio()
+    }
+
+    @GetMapping("/empty")
+    fun listarNaoRespondidos(
+        @RequestParam(required = false) status: String?): List<Topico>{
+        return service.listarNaoRespondidos()
+    }
+
 }
