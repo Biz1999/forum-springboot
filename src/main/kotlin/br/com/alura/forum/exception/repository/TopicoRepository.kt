@@ -1,4 +1,4 @@
-package br.com.alura.forum.repository
+package br.com.alura.forum.exception.repository
 
 import br.com.alura.forum.dto.TopicoPorCategoriaDto
 import br.com.alura.forum.models.Topico

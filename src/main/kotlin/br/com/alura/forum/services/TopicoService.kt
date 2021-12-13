@@ -8,7 +8,7 @@ import br.com.alura.forum.exception.NotFoundException
 import br.com.alura.forum.mapper.TopicoFormMapper
 import br.com.alura.forum.mapper.TopicoViewMapper
 import br.com.alura.forum.models.Topico
-import br.com.alura.forum.repository.TopicoRepository
+import br.com.alura.forum.exception.repository.TopicoRepository
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service
